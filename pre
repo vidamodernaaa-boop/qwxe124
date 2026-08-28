@@ -1,0 +1,4281 @@
+MHFRT PRE-DELIVERY FACIAL CONNECTION DIAGNOSTIC — READ ONLY
+====================================================================================================
+
+[BOARD]
+  object: Charlie 9 Mesh_FacialRig_FaceBoard
+  type: ARMATURE
+  rig_id: b6fdccfc4159
+
+----------------------------------------------------------------------------------------------------
+[CONTROL BONE PROPERTIES / CONSTRAINTS]
+----------------------------------------------------------------------------------------------------
+
+CONTROL: CTRL_L_brow_down
+  custom properties:
+     mhfrt_control_name = 'CTRL_L_brow_down'
+     mhfrt_board_source = 'MH4_BONES'
+     mhfrt_control_rest = <bpy id property array [3]>
+     mhfrt_control_shape = <bpy id property array [7]>
+     mhfrt_control_widget = <bpy id property array [9]>
+  constraints: 3
+     Limit Location | type: LIMIT_LOCATION
+     Limit Rotation | type: LIMIT_ROTATION
+     Limit Scale | type: LIMIT_SCALE
+
+CONTROL: CTRL_L_eye_blink
+  custom properties:
+     mhfrt_control_name = 'CTRL_L_eye_blink'
+     mhfrt_board_source = 'MH4_BONES'
+     mhfrt_control_rest = <bpy id property array [3]>
+     mhfrt_control_shape = <bpy id property array [7]>
+     mhfrt_control_widget = <bpy id property array [9]>
+  constraints: 3
+     Limit Location | type: LIMIT_LOCATION
+     Limit Rotation | type: LIMIT_ROTATION
+     Limit Scale | type: LIMIT_SCALE
+
+CONTROL: CTRL_C_mouth
+  custom properties:
+     mhfrt_control_name = 'CTRL_C_mouth'
+     mhfrt_board_source = 'MH4_BONES'
+     mhfrt_control_rest = <bpy id property array [3]>
+     mhfrt_control_shape = <bpy id property array [7]>
+     mhfrt_control_widget = <bpy id property array [9]>
+  constraints: 3
+     Limit Location | type: LIMIT_LOCATION
+     Limit Rotation | type: LIMIT_ROTATION
+     Limit Scale | type: LIMIT_SCALE
+
+CONTROL: CTRL_C_jaw
+  custom properties:
+     mhfrt_control_name = 'CTRL_C_jaw'
+     mhfrt_board_source = 'MH4_BONES'
+     mhfrt_control_rest = <bpy id property array [3]>
+     mhfrt_control_shape = <bpy id property array [7]>
+     mhfrt_control_widget = <bpy id property array [9]>
+  constraints: 3
+     Limit Location | type: LIMIT_LOCATION
+     Limit Rotation | type: LIMIT_ROTATION
+     Limit Scale | type: LIMIT_SCALE
+
+----------------------------------------------------------------------------------------------------
+[DRIVERS ON FACIAL OBJECTS]
+----------------------------------------------------------------------------------------------------
+
+OBJECT: Charlie 9 | type: ARMATURE | drivers: 396
+   pose.bones["l_metatarsal"].rotation_euler [ 0 ]
+     expression: '-0.231*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_foot(drv)'
+       data_path: ''
+   pose.bones["l_metatarsal"].rotation_euler [ 2 ]
+     expression: '-0.2*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_foot(drv)'
+       data_path: ''
+   pose.bones["l_metatarsal"].rotation_euler [ 1 ]
+     expression: '-0.444*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_foot(drv)'
+       data_path: ''
+   pose.bones["r_metatarsal"].rotation_euler [ 0 ]
+     expression: '-0.231*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_foot(drv)'
+       data_path: ''
+   pose.bones["r_metatarsal"].rotation_euler [ 2 ]
+     expression: '-0.2*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_foot(drv)'
+       data_path: ''
+   pose.bones["r_metatarsal"].rotation_euler [ 1 ]
+     expression: '-0.444*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_foot(drv)'
+       data_path: ''
+   pose.bones["l_thightwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.7*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_thigh(drv)'
+       data_path: ''
+   pose.bones["l_thightwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.233*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_thigh(drv)'
+       data_path: ''
+   pose.bones["r_thightwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.7*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_thigh(drv)'
+       data_path: ''
+   pose.bones["r_thightwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.233*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_thigh(drv)'
+       data_path: ''
+   pose.bones["l_forearmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.833*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_forearm'
+       data_path: ''
+   pose.bones["l_forearmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.278*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_forearm'
+       data_path: ''
+   pose.bones["l_upperarmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.75*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_upperarm(drv)'
+       data_path: ''
+   pose.bones["l_upperarmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.25*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'l_upperarm(drv)'
+       data_path: ''
+   pose.bones["r_forearmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.833*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_forearm'
+       data_path: ''
+   pose.bones["r_forearmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.278*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_forearm'
+       data_path: ''
+   pose.bones["r_upperarmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.75*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_upperarm(drv)'
+       data_path: ''
+   pose.bones["r_upperarmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.25*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9
+       bone: 'r_upperarm(drv)'
+       data_path: ''
+   pose.bones["shaft_06(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_06:Sca:0"]'
+   pose.bones["shaft_06(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_06:Sca:1"]'
+   pose.bones["shaft_06(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_06:Sca:2"]'
+   pose.bones["shaft_07(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_07:Sca:0"]'
+   pose.bones["shaft_07(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_07:Sca:1"]'
+   pose.bones["shaft_07(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_07:Sca:2"]'
+   pose.bones["shaft_08(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_08:Sca:0"]'
+   pose.bones["shaft_08(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_08:Sca:1"]'
+   pose.bones["shaft_08(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_08:Sca:2"]'
+   pose.bones["shaft_09(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_09:Sca:0"]'
+   pose.bones["shaft_09(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_09:Sca:1"]'
+   pose.bones["shaft_09(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_09:Sca:2"]'
+   pose.bones["shaft_10(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_10:Sca:0"]'
+   pose.bones["shaft_10(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_10:Sca:1"]'
+   pose.bones["shaft_10(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_10:Sca:2"]'
+   pose.bones["foreskin_01(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_01:Sca:0"]'
+   pose.bones["foreskin_01(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_01:Sca:1"]'
+   pose.bones["foreskin_01(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_01:Sca:2"]'
+   pose.bones["foreskin_02(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_02:Sca:0"]'
+   pose.bones["foreskin_02(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_02:Sca:1"]'
+   pose.bones["foreskin_02(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_02:Sca:2"]'
+   pose.bones["foreskin_03(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_03:Sca:0"]'
+   pose.bones["foreskin_03(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_03:Sca:1"]'
+   pose.bones["foreskin_03(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_03:Sca:2"]'
+   pose.bones["foreskin_04(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_04:Sca:0"]'
+   pose.bones["foreskin_04(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_04:Sca:1"]'
+   pose.bones["foreskin_04(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_04:Sca:2"]'
+   pose.bones["foreskin_05(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_05:Sca:0"]'
+   pose.bones["foreskin_05(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_05:Sca:1"]'
+   pose.bones["foreskin_05(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_05:Sca:2"]'
+   pose.bones["foreskin_06(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_06:Sca:0"]'
+   pose.bones["foreskin_06(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_06:Sca:1"]'
+   pose.bones["foreskin_06(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_06:Sca:2"]'
+   pose.bones["foreskin_07(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_07:Sca:0"]'
+   pose.bones["foreskin_07(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_07:Sca:1"]'
+   pose.bones["foreskin_07(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_07:Sca:2"]'
+   pose.bones["foreskin_08(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_08:Sca:0"]'
+   pose.bones["foreskin_08(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_08:Sca:1"]'
+   pose.bones["foreskin_08(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_08:Sca:2"]'
+   pose.bones["foreskin_09(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_09:Sca:0"]'
+   pose.bones["foreskin_09(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_09:Sca:1"]'
+   pose.bones["foreskin_09(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_09:Sca:2"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_infold:Sca:0"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_infold:Sca:1"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["foreskin_infold:Sca:2"]'
+   pose.bones["glans(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans:Sca:0"]'
+   pose.bones["glans(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans:Sca:1"]'
+   pose.bones["glans(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans:Sca:2"]'
+   pose.bones["glans_tip(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans_tip:Sca:0"]'
+   pose.bones["glans_tip(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans_tip:Sca:1"]'
+   pose.bones["glans_tip(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["glans_tip:Sca:2"]'
+   pose.bones["urethra(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["urethra:Sca:0"]'
+   pose.bones["urethra(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["urethra:Sca:1"]'
+   pose.bones["urethra(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["urethra:Sca:2"]'
+   pose.bones["shaft_01(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_01:Sca:0"]'
+   pose.bones["shaft_01(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_01:Sca:2"]'
+   pose.bones["shaft_01(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_01:Sca:1"]'
+   pose.bones["shaft_02(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_02:Sca:0"]'
+   pose.bones["shaft_02(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_02:Sca:2"]'
+   pose.bones["shaft_02(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_02:Sca:1"]'
+   pose.bones["shaft_03(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_03:Sca:0"]'
+   pose.bones["shaft_03(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_03:Sca:2"]'
+   pose.bones["shaft_03(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_03:Sca:1"]'
+   pose.bones["shaft_04(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_04:Sca:0"]'
+   pose.bones["shaft_04(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_04:Sca:2"]'
+   pose.bones["shaft_04(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_04:Sca:1"]'
+   pose.bones["shaft_05(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_05:Sca:0"]'
+   pose.bones["shaft_05(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_05:Sca:2"]'
+   pose.bones["shaft_05(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_05:Sca:1"]'
+   pose.bones["shaft_01(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["shaft_01:Loc:2:01"]'
+   ["body_bs_FlexBicepsL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexBicepsL"]'
+   ["body_bs_FlexBicepsR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexBicepsR"]'
+   ["body_bs_FlexCalfL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexCalfL"]'
+   ["body_bs_FlexCalfR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexCalfR"]'
+   ["body_bs_FlexGluteClenchL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexGluteClenchL"]'
+   ["body_bs_FlexGluteClenchR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexGluteClenchR"]'
+   ["body_bs_FlexHamstringL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexHamstringL"]'
+   ["body_bs_FlexHamstringR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexHamstringR"]'
+   ["body_bs_FlexQuadL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexQuadL"]'
+   ["body_bs_FlexQuadR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexQuadR"]'
+   ["body_bs_FlexShoulderUpperBackL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexShoulderUpperBackL"]'
+   ["body_bs_FlexShoulderUpperBackR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexShoulderUpperBackR"]'
+   ["body_bs_FlexTricepsL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexTricepsL"]'
+   ["body_bs_FlexTricepsR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_FlexTricepsR"]'
+   ["body_ctrl_FlexBicepsL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexBicepsL"]'
+   ["body_ctrl_FlexBicepsR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexBicepsR"]'
+   ["body_ctrl_FlexBiceps_TwistL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexBiceps_TwistL"]'
+   ["body_ctrl_FlexBiceps_TwistR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexBiceps_TwistR"]'
+   ["body_ctrl_FlexCalfL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexCalfL"]'
+   ["body_ctrl_FlexCalfR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexCalfR"]'
+   ["body_ctrl_FlexHamstringL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexHamstringL"]'
+   ["body_ctrl_FlexHamstringR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexHamstringR"]'
+   ["body_ctrl_FlexShoulderUpperBackL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexShoulderUpperBackL"]'
+   ["body_ctrl_FlexShoulderUpperBackR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexShoulderUpperBackR"]'
+   ["body_ctrl_FlexTricepsL"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexTricepsL"]'
+   ["body_ctrl_FlexTricepsR"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexTricepsR"]'
+   ["body_ctrl_FlexionAutoStrength"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_ctrl_FlexionAutoStrength"]'
+   ["DEX_Leo9_Head_Neck_ctrl_Proportions-0xa631159"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DEX_Leo9_Head_Neck_ctrl_Proportions-0xa631159"]'
+   ["DK_Anus_Open1"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Anus_Open1"]'
+   ["DK_Anus_Open3"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Anus_Open3"]'
+   ["body_bs_BodyFitnessDetails"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyFitnessDetails"]'
+   ["body_bs_BodyFitnessMass"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyFitnessMass"]'
+   ["body_bs_BodyTone"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyTone"]'
+   ["head_ctrl_ProportionHeadSize_scl"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["head_ctrl_ProportionHeadSize_scl"]'
+   ["head_bs_ProportionNeckLength"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["head_bs_ProportionNeckLength"]'
+   ["MB_Cerra_body_cbs_thigh_z90n_r-0xa3417e9"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MB_Cerra_body_cbs_thigh_z90n_r-0xa3417e9"]'
+   ["Lucas9_body_cbs_BodyEmaciated-0xa54fe33"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["Lucas9_body_cbs_BodyEmaciated-0xa54fe33"]'
+   ["body_bs_BodyEmaciated"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyEmaciated"]'
+   ["Lucas9_body_bs_Body-0xa53ee3b"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["Lucas9_body_bs_Body-0xa53ee3b"]'
+   ["Wagner9_body_cbs_BodyLithe-0xa31c4bc"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["Wagner9_body_cbs_BodyLithe-0xa31c4bc"]'
+   ["body_bs_BodyLithe"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyLithe"]'
+   ["Wagner9_body_bs_Body-0xa31823b"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["Wagner9_body_bs_Body-0xa31823b"]'
+   ["Wagner9_body_cbs_BodyThin-0xa31c48a"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["Wagner9_body_cbs_BodyThin-0xa31c48a"]'
+   ["body_bs_BodyThin"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_bs_BodyThin"]'
+   ["MB_Fancie_Body_bs_body-0xa65942c"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MB_Fancie_Body_bs_body-0xa65942c"]'
+   ["MB_Cerra_Body_bs_body-0xa3ba354"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MB_Cerra_Body_bs_body-0xa3ba354"]'
+   ["DK_Glans_Scale"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Glans_Scale"]'
+   ["DK_ScrotumGone"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_ScrotumGone"]'
+   ["DK_Shaft_BulgeSide"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_BulgeSide"]'
+   ["DK_Shaft_BulgeTop"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_BulgeTop"]'
+   ["DK_Shaft_Conical1"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Conical1"]'
+   ["DK_Shaft_Inflate3"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Inflate3"]'
+   ["DK_Shaft_Inflate4"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Inflate4"]'
+   ["DK_Shaft_Bulgy"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Bulgy"]'
+   ["DK_Shaft_Inflate2"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Inflate2"]'
+   ["DK_Shaft_Shorten"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["DK_Shaft_Shorten"]'
+   ["body_cbs_foot_x45n_r-0xa70b048"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_cbs_foot_x45n_r-0xa70b048"]'
+   ["body_cbs_foot_x65p_r-0xa70b048"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_cbs_foot_x65p_r-0xa70b048"]'
+   ["body_cbs_toes_x60n_r-0xa70b048"] [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["body_cbs_toes_x60n_r-0xa70b048"]'
+   pose.bones["l_eyelidupper(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_eyelidupper:Rot:0:01"]'
+   pose.bones["l_eyelidlower(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_eyelidlower:Rot:0:01"]'
+   pose.bones["r_eyelidupper(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_eyelidupper:Rot:0:01"]'
+   pose.bones["r_eyelidlower(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_eyelidlower:Rot:0:01"]'
+   pose.bones["lowerjaw(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lowerjaw:Loc:1:01"]'
+   pose.bones["lowerjaw(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lowerjaw:Loc:2:01"]'
+   pose.bones["lowerjaw(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lowerjaw:Loc:0:01"]'
+   pose.bones["lowerjaw(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lowerjaw:Rot:0:01"]'
+   pose.bones["lowerjaw(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lowerjaw:Rot:2:01"]'
+   pose.bones["lipuppermiddle(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lipuppermiddle:Loc:0:01"]'
+   pose.bones["lipuppermiddle(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["lipuppermiddle:Loc:2:01"]'
+   pose.bones["l_lipupper(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipupper:Loc:1:01"]'
+   pose.bones["l_lipupper(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipupper:Loc:0:01"]'
+   pose.bones["l_lipupper(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipupper:Loc:2:01"]'
+   pose.bones["r_lipupper(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipupper:Loc:1:01"]'
+   pose.bones["r_lipupper(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipupper:Loc:0:01"]'
+   pose.bones["r_lipupper(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipupper:Loc:2:01"]'
+   pose.bones["l_lipcorner(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipcorner:Loc:0:01"]'
+   pose.bones["l_lipcorner(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipcorner:Loc:2:01"]'
+   pose.bones["l_lipcorner(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_lipcorner:Loc:1:01"]'
+   pose.bones["r_cheeklower(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_cheeklower:Loc:0:01"]'
+   pose.bones["r_cheeklower(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_cheeklower:Loc:1:01"]'
+   pose.bones["l_cheeklower(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_cheeklower:Loc:0:01"]'
+   pose.bones["l_cheeklower(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_cheeklower:Loc:1:01"]'
+   pose.bones["l_eye(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_eye:Rot:2:01"]'
+   pose.bones["l_eye(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_eye:Rot:0:01"]'
+   pose.bones["l_eye(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_eye:Rot:1:01"]'
+   pose.bones["r_eye(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_eye:Rot:2:01"]'
+   pose.bones["r_eye(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_eye:Rot:0:01"]'
+   pose.bones["r_eye(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_eye:Rot:1:01"]'
+   pose.bones["tongue02(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue02:Rot:2:01"]'
+   pose.bones["tongue02(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue02:Rot:1:01"]'
+   pose.bones["tongue02(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue02:Rot:0:01"]'
+   pose.bones["tongue03(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue03:Rot:2:01"]'
+   pose.bones["tongue03(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue03:Rot:0:01"]'
+   pose.bones["tongue03(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue03:Rot:1:01"]'
+   pose.bones["tongue04(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue04:Rot:2:01"]'
+   pose.bones["tongue04(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue04:Rot:0:01"]'
+   pose.bones["tongue04(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue04:Rot:1:01"]'
+   pose.bones["tongue05(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue05:Rot:2:01"]'
+   pose.bones["tongue05(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue05:Rot:0:01"]'
+   pose.bones["tongue05(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue05:Rot:1:01"]'
+   pose.bones["l_liplower(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_liplower:Loc:2:01"]'
+   pose.bones["l_liplower(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_liplower:Loc:1:01"]'
+   pose.bones["l_liplower(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_liplower:Loc:0:01"]'
+   pose.bones["l_liplower(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_liplower:Rot:0:01"]'
+   pose.bones["liplowermiddle(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["liplowermiddle:Loc:2:01"]'
+   pose.bones["liplowermiddle(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["liplowermiddle:Loc:1:01"]'
+   pose.bones["liplowermiddle(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["liplowermiddle:Rot:0:01"]'
+   pose.bones["r_liplower(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_liplower:Loc:2:01"]'
+   pose.bones["r_liplower(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_liplower:Loc:1:01"]'
+   pose.bones["r_liplower(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_liplower:Loc:0:01"]'
+   pose.bones["r_lipcorner(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipcorner:Loc:2:01"]'
+   pose.bones["r_lipcorner(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipcorner:Loc:0:01"]'
+   pose.bones["r_lipcorner(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_lipcorner:Loc:1:01"]'
+   pose.bones["l_browinner(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_browinner:Loc:0:01"]'
+   pose.bones["l_browinner(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_browinner:Loc:2:01"]'
+   pose.bones["l_browouter(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_browouter:Loc:2:01"]'
+   pose.bones["r_browinner(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_browinner:Loc:2:01"]'
+   pose.bones["r_browouter(drv)"].location [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_browouter:Loc:0:01"]'
+   pose.bones["r_browouter(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_browouter:Loc:2:01"]'
+   pose.bones["r_nostril(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_nostril:Loc:2:01"]'
+   pose.bones["chin(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["chin:Loc:2:01"]'
+   pose.bones["tongue01(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue01:Rot:0:01"]'
+   pose.bones["tongue01(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue01:Rot:2:01"]'
+   pose.bones["tongue01(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["tongue01:Rot:1:01"]'
+   pose.bones["l_shoulder(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_shoulder:Rot:0:01"]'
+   pose.bones["l_shoulder(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_shoulder:Rot:2:01"]'
+   pose.bones["l_shoulder(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_shoulder:Rot:1:01"]'
+   pose.bones["l_upperarm(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_upperarm:Rot:1:01"]'
+   pose.bones["l_upperarm(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_upperarm:Rot:0:01"]'
+   pose.bones["l_upperarm(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_upperarm:Rot:2:01"]'
+   pose.bones["r_shoulder(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_shoulder:Rot:0:01"]'
+   pose.bones["r_shoulder(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_shoulder:Rot:2:01"]'
+   pose.bones["r_shoulder(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_shoulder:Rot:1:01"]'
+   pose.bones["r_upperarm(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_upperarm:Rot:1:01"]'
+   pose.bones["r_upperarm(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_upperarm:Rot:0:01"]'
+   pose.bones["r_upperarm(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_upperarm:Rot:2:01"]'
+   pose.bones["hip(drv)"].location [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["hip:Loc:1:01"]'
+   pose.bones["hip(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["hip:Loc:2:01"]'
+   pose.bones["hip(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["hip:Rot:0:01"]'
+   pose.bones["pelvis(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["pelvis:Rot:0:01"]'
+   pose.bones["l_thigh(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thigh:Rot:0:01"]'
+   pose.bones["l_thigh(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thigh:Rot:2:01"]'
+   pose.bones["l_thigh(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thigh:Rot:1:01"]'
+   pose.bones["l_shin(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_shin:Rot:0:01"]'
+   pose.bones["l_shin(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_shin:Rot:1:01"]'
+   pose.bones["l_foot(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_foot:Rot:0:01"]'
+   pose.bones["l_foot(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_foot:Rot:1:01"]'
+   pose.bones["l_foot(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_foot:Rot:2:01"]'
+   pose.bones["r_thigh(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thigh:Rot:0:01"]'
+   pose.bones["r_thigh(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thigh:Rot:2:01"]'
+   pose.bones["r_thigh(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thigh:Rot:1:01"]'
+   pose.bones["r_shin(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_shin:Rot:0:01"]'
+   pose.bones["r_shin(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_shin:Rot:1:01"]'
+   pose.bones["r_foot(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_foot:Rot:0:01"]'
+   pose.bones["r_foot(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_foot:Rot:1:01"]'
+   pose.bones["r_foot(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_foot:Rot:2:01"]'
+   pose.bones["spine2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine2:Rot:0:01"]'
+   pose.bones["spine2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine2:Rot:1:01"]'
+   pose.bones["spine2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine2:Rot:2:01"]'
+   pose.bones["spine3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine3:Rot:0:01"]'
+   pose.bones["spine3(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine3:Rot:1:01"]'
+   pose.bones["spine3(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine3:Rot:2:01"]'
+   pose.bones["spine4(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine4:Rot:0:01"]'
+   pose.bones["spine4(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine4:Rot:2:01"]'
+   pose.bones["spine4(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine4:Rot:1:01"]'
+   pose.bones["neck1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck1:Rot:0:01"]'
+   pose.bones["neck1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck1:Rot:1:01"]'
+   pose.bones["neck1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck1:Rot:2:01"]'
+   pose.bones["neck2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck2:Rot:0:01"]'
+   pose.bones["neck2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck2:Rot:2:01"]'
+   pose.bones["neck2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["neck2:Rot:1:01"]'
+   pose.bones["head(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["head:Rot:0:01"]'
+   pose.bones["head(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["head:Rot:2:01"]'
+   pose.bones["head(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["head:Rot:1:01"]'
+   pose.bones["spine1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine1:Rot:0:01"]'
+   pose.bones["spine1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine1:Rot:1:01"]'
+   pose.bones["spine1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["spine1:Rot:2:01"]'
+   pose.bones["l_bigtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe1:Rot:0:01"]'
+   pose.bones["l_bigtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe1:Rot:1:01"]'
+   pose.bones["l_bigtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe1:Rot:2:01"]'
+   pose.bones["l_pectoral(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pectoral:Rot:1:01"]'
+   pose.bones["l_pectoral(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pectoral:Rot:2:01"]'
+   pose.bones["l_pectoral(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pectoral:Rot:0:01"]'
+   pose.bones["l_index1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_index1:Rot:0:01"]'
+   pose.bones["l_index1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_index1:Rot:2:01"]'
+   pose.bones["l_index1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_index1:Rot:1:01"]'
+   pose.bones["l_index2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_index2:Rot:0:01"]'
+   pose.bones["l_index3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_index3:Rot:0:01"]'
+   pose.bones["l_mid1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_mid1:Rot:0:01"]'
+   pose.bones["l_mid1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_mid1:Rot:1:01"]'
+   pose.bones["l_mid1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_mid1:Rot:2:01"]'
+   pose.bones["l_mid2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_mid2:Rot:0:01"]'
+   pose.bones["l_mid3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_mid3:Rot:0:01"]'
+   pose.bones["l_ring1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ring1:Rot:0:01"]'
+   pose.bones["l_ring1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ring1:Rot:1:01"]'
+   pose.bones["l_ring1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ring1:Rot:2:01"]'
+   pose.bones["l_ring2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ring2:Rot:0:01"]'
+   pose.bones["l_ring3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ring3:Rot:0:01"]'
+   pose.bones["l_pinky1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinky1:Rot:0:01"]'
+   pose.bones["l_pinky1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinky1:Rot:2:01"]'
+   pose.bones["l_pinky1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinky1:Rot:1:01"]'
+   pose.bones["l_pinky2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinky2:Rot:0:01"]'
+   pose.bones["l_pinky3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinky3:Rot:0:01"]'
+   pose.bones["l_indexmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indexmetacarpal:Rot:2:01"]'
+   pose.bones["l_ringmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringmetacarpal:Rot:2:01"]'
+   pose.bones["l_ringmetacarpal(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringmetacarpal:Rot:0:01"]'
+   pose.bones["l_pinkymetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkymetacarpal:Rot:2:01"]'
+   pose.bones["l_pinkymetacarpal(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkymetacarpal:Rot:0:01"]'
+   pose.bones["l_midmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midmetacarpal:Rot:2:01"]'
+   pose.bones["l_toes(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_toes:Rot:0:01"]'
+   pose.bones["l_thumb1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thumb1:Rot:1:01"]'
+   pose.bones["l_thumb1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thumb1:Rot:0:01"]'
+   pose.bones["l_thumb1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thumb1:Rot:2:01"]'
+   pose.bones["l_thumb2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thumb2:Rot:0:01"]'
+   pose.bones["l_thumb3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_thumb3:Rot:0:01"]'
+   pose.bones["l_indextoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe1:Rot:0:01"]'
+   pose.bones["l_indextoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe1:Rot:1:01"]'
+   pose.bones["l_indextoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe1:Rot:2:01"]'
+   pose.bones["l_midtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe1:Rot:0:01"]'
+   pose.bones["l_midtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe1:Rot:1:01"]'
+   pose.bones["l_midtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe1:Rot:2:01"]'
+   pose.bones["l_pinkytoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe1:Rot:0:01"]'
+   pose.bones["l_pinkytoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe1:Rot:1:01"]'
+   pose.bones["l_pinkytoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe1:Rot:2:01"]'
+   pose.bones["l_ringtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe1:Rot:0:01"]'
+   pose.bones["l_ringtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe1:Rot:1:01"]'
+   pose.bones["l_ringtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe1:Rot:2:01"]'
+   pose.bones["l_pinkytoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe2:Rot:0:01"]'
+   pose.bones["l_pinkytoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe2:Rot:1:01"]'
+   pose.bones["l_pinkytoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_pinkytoe2:Rot:2:01"]'
+   pose.bones["l_ringtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe2:Rot:0:01"]'
+   pose.bones["l_ringtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe2:Rot:1:01"]'
+   pose.bones["l_ringtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_ringtoe2:Rot:2:01"]'
+   pose.bones["l_midtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe2:Rot:0:01"]'
+   pose.bones["l_midtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe2:Rot:1:01"]'
+   pose.bones["l_midtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_midtoe2:Rot:2:01"]'
+   pose.bones["l_indextoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe2:Rot:0:01"]'
+   pose.bones["l_indextoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe2:Rot:1:01"]'
+   pose.bones["l_indextoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_indextoe2:Rot:2:01"]'
+   pose.bones["l_bigtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe2:Rot:0:01"]'
+   pose.bones["l_bigtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe2:Rot:1:01"]'
+   pose.bones["l_bigtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["l_bigtoe2:Rot:2:01"]'
+   pose.bones["r_bigtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe1:Rot:0:01"]'
+   pose.bones["r_bigtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe1:Rot:1:01"]'
+   pose.bones["r_bigtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe1:Rot:2:01"]'
+   pose.bones["r_pectoral(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pectoral:Rot:1:01"]'
+   pose.bones["r_pectoral(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pectoral:Rot:2:01"]'
+   pose.bones["r_pectoral(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pectoral:Rot:0:01"]'
+   pose.bones["r_indexmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indexmetacarpal:Rot:2:01"]'
+   pose.bones["r_index1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_index1:Rot:1:01"]'
+   pose.bones["r_index1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_index1:Rot:2:01"]'
+   pose.bones["r_index1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_index1:Rot:0:01"]'
+   pose.bones["r_index2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_index2:Rot:0:01"]'
+   pose.bones["r_index3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_index3:Rot:0:01"]'
+   pose.bones["r_mid1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_mid1:Rot:1:01"]'
+   pose.bones["r_mid1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_mid1:Rot:0:01"]'
+   pose.bones["r_mid1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_mid1:Rot:2:01"]'
+   pose.bones["r_mid2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_mid2:Rot:0:01"]'
+   pose.bones["r_mid3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_mid3:Rot:0:01"]'
+   pose.bones["r_ringmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringmetacarpal:Rot:2:01"]'
+   pose.bones["r_ringmetacarpal(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringmetacarpal:Rot:0:01"]'
+   pose.bones["r_ring1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ring1:Rot:1:01"]'
+   pose.bones["r_ring1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ring1:Rot:0:01"]'
+   pose.bones["r_ring1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ring1:Rot:2:01"]'
+   pose.bones["r_ring2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ring2:Rot:0:01"]'
+   pose.bones["r_ring3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ring3:Rot:0:01"]'
+   pose.bones["r_pinkymetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkymetacarpal:Rot:2:01"]'
+   pose.bones["r_pinkymetacarpal(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkymetacarpal:Rot:0:01"]'
+   pose.bones["r_pinky1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinky1:Rot:1:01"]'
+   pose.bones["r_pinky1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinky1:Rot:2:01"]'
+   pose.bones["r_pinky1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinky1:Rot:0:01"]'
+   pose.bones["r_pinky2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinky2:Rot:0:01"]'
+   pose.bones["r_pinky3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinky3:Rot:0:01"]'
+   pose.bones["r_midmetacarpal(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midmetacarpal:Rot:2:01"]'
+   pose.bones["r_toes(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_toes:Rot:0:01"]'
+   pose.bones["r_thumb1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thumb1:Rot:1:01"]'
+   pose.bones["r_thumb1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thumb1:Rot:0:01"]'
+   pose.bones["r_thumb1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thumb1:Rot:2:01"]'
+   pose.bones["r_thumb2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thumb2:Rot:0:01"]'
+   pose.bones["r_thumb3(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_thumb3:Rot:0:01"]'
+   pose.bones["r_indextoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe1:Rot:0:01"]'
+   pose.bones["r_indextoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe1:Rot:1:01"]'
+   pose.bones["r_indextoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe1:Rot:2:01"]'
+   pose.bones["r_midtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe1:Rot:0:01"]'
+   pose.bones["r_midtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe1:Rot:1:01"]'
+   pose.bones["r_midtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe1:Rot:2:01"]'
+   pose.bones["r_pinkytoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe1:Rot:0:01"]'
+   pose.bones["r_pinkytoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe1:Rot:1:01"]'
+   pose.bones["r_pinkytoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe1:Rot:2:01"]'
+   pose.bones["r_ringtoe1(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe1:Rot:0:01"]'
+   pose.bones["r_ringtoe1(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe1:Rot:1:01"]'
+   pose.bones["r_ringtoe1(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe1:Rot:2:01"]'
+   pose.bones["r_pinkytoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe2:Rot:0:01"]'
+   pose.bones["r_pinkytoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe2:Rot:1:01"]'
+   pose.bones["r_pinkytoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_pinkytoe2:Rot:2:01"]'
+   pose.bones["r_ringtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe2:Rot:0:01"]'
+   pose.bones["r_ringtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe2:Rot:1:01"]'
+   pose.bones["r_ringtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_ringtoe2:Rot:2:01"]'
+   pose.bones["r_midtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe2:Rot:0:01"]'
+   pose.bones["r_midtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe2:Rot:1:01"]'
+   pose.bones["r_midtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_midtoe2:Rot:2:01"]'
+   pose.bones["r_indextoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe2:Rot:0:01"]'
+   pose.bones["r_indextoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe2:Rot:1:01"]'
+   pose.bones["r_indextoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_indextoe2:Rot:2:01"]'
+   pose.bones["r_bigtoe2(drv)"].rotation_euler [ 0 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe2:Rot:0:01"]'
+   pose.bones["r_bigtoe2(drv)"].rotation_euler [ 1 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe2:Rot:1:01"]'
+   pose.bones["r_bigtoe2(drv)"].rotation_euler [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9
+       bone: ''
+       data_path: '["r_bigtoe2:Rot:2:01"]'
+
+OBJECT: Charlie 9 Mesh_FacialRig_FaceBoard | type: ARMATURE | drivers: 2
+   pose.bones["CTRL_faceGUI"].constraints["MHFRT Follow Head"].influence [ 0 ]
+     expression: 'min(1.0, max(0.0, follow/1.1224416494369507))'
+     variable: follow | type: SINGLE_PROP
+       target_id: Charlie 9 Mesh_FacialRig_FaceBoard
+       bone: ''
+       data_path: 'pose.bones["CTRL_faceGUIfollowHead"].location[1]'
+   pose.bones["CTRL_C_eyesAim"].constraints["MHFRT Follow Head"].influence [ 0 ]
+     expression: 'min(1.0, max(0.0, follow/1.1224416494369507))'
+     variable: follow | type: SINGLE_PROP
+       target_id: Charlie 9 Mesh_FacialRig_FaceBoard
+       bone: ''
+       data_path: 'pose.bones["CTRL_eyesAimFollowHead"].location[1]'
+
+OBJECT: Charlie 9_MHX | type: ARMATURE | drivers: 284
+   pose.bones["tarsal.L"].rotation_euler [ 0 ]
+     expression: '-0.231*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.L'
+       data_path: ''
+   pose.bones["tarsal.L"].rotation_euler [ 2 ]
+     expression: '-0.2*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.L'
+       data_path: ''
+   pose.bones["tarsal.L"].rotation_euler [ 1 ]
+     expression: '-0.444*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.L'
+       data_path: ''
+   pose.bones["tarsal.R"].rotation_euler [ 0 ]
+     expression: '-0.231*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.R'
+       data_path: ''
+   pose.bones["tarsal.R"].rotation_euler [ 2 ]
+     expression: '-0.2*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.R'
+       data_path: ''
+   pose.bones["tarsal.R"].rotation_euler [ 1 ]
+     expression: '-0.444*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'foot.R'
+       data_path: ''
+   pose.bones["l_thightwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.7*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'thigh.L'
+       data_path: ''
+   pose.bones["l_thightwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.233*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'thigh.L'
+       data_path: ''
+   pose.bones["r_thightwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.7*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'thigh.R'
+       data_path: ''
+   pose.bones["r_thightwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.233*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'thigh.R'
+       data_path: ''
+   pose.bones["l_forearmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.833*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'forearm.L'
+       data_path: ''
+   pose.bones["l_forearmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.278*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'forearm.L'
+       data_path: ''
+   pose.bones["l_upperarmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.75*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'upper_arm.L'
+       data_path: ''
+   pose.bones["l_upperarmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.25*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'upper_arm.L'
+       data_path: ''
+   pose.bones["r_forearmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.833*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'forearm.R'
+       data_path: ''
+   pose.bones["r_forearmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.278*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'forearm.R'
+       data_path: ''
+   pose.bones["r_upperarmtwist1(drv)"].rotation_euler [ 1 ]
+     expression: '-0.75*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'upper_arm.R'
+       data_path: ''
+   pose.bones["r_upperarmtwist2(drv)"].rotation_euler [ 1 ]
+     expression: '-0.25*A'
+     variable: A | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'upper_arm.R'
+       data_path: ''
+   pose.bones["shaft_06(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_06:Sca:0"]'
+   pose.bones["shaft_06(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_06:Sca:1"]'
+   pose.bones["shaft_06(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_06:Sca:2"]'
+   pose.bones["shaft_07(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_07:Sca:0"]'
+   pose.bones["shaft_07(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_07:Sca:1"]'
+   pose.bones["shaft_07(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_07:Sca:2"]'
+   pose.bones["shaft_08(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_08:Sca:0"]'
+   pose.bones["shaft_08(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_08:Sca:1"]'
+   pose.bones["shaft_08(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_08:Sca:2"]'
+   pose.bones["shaft_09(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_09:Sca:0"]'
+   pose.bones["shaft_09(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_09:Sca:1"]'
+   pose.bones["shaft_09(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_09:Sca:2"]'
+   pose.bones["shaft_10(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_10:Sca:0"]'
+   pose.bones["shaft_10(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_10:Sca:1"]'
+   pose.bones["shaft_10(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_10:Sca:2"]'
+   pose.bones["foreskin_01(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_01:Sca:0"]'
+   pose.bones["foreskin_01(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_01:Sca:1"]'
+   pose.bones["foreskin_01(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_01:Sca:2"]'
+   pose.bones["foreskin_02(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_02:Sca:0"]'
+   pose.bones["foreskin_02(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_02:Sca:1"]'
+   pose.bones["foreskin_02(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_02:Sca:2"]'
+   pose.bones["foreskin_03(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_03:Sca:0"]'
+   pose.bones["foreskin_03(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_03:Sca:1"]'
+   pose.bones["foreskin_03(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_03:Sca:2"]'
+   pose.bones["foreskin_04(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_04:Sca:0"]'
+   pose.bones["foreskin_04(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_04:Sca:1"]'
+   pose.bones["foreskin_04(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_04:Sca:2"]'
+   pose.bones["foreskin_05(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_05:Sca:0"]'
+   pose.bones["foreskin_05(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_05:Sca:1"]'
+   pose.bones["foreskin_05(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_05:Sca:2"]'
+   pose.bones["foreskin_06(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_06:Sca:0"]'
+   pose.bones["foreskin_06(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_06:Sca:1"]'
+   pose.bones["foreskin_06(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_06:Sca:2"]'
+   pose.bones["foreskin_07(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_07:Sca:0"]'
+   pose.bones["foreskin_07(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_07:Sca:1"]'
+   pose.bones["foreskin_07(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_07:Sca:2"]'
+   pose.bones["foreskin_08(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_08:Sca:0"]'
+   pose.bones["foreskin_08(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_08:Sca:1"]'
+   pose.bones["foreskin_08(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_08:Sca:2"]'
+   pose.bones["foreskin_09(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_09:Sca:0"]'
+   pose.bones["foreskin_09(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_09:Sca:1"]'
+   pose.bones["foreskin_09(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_09:Sca:2"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_infold:Sca:0"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_infold:Sca:1"]'
+   pose.bones["foreskin_infold(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["foreskin_infold:Sca:2"]'
+   pose.bones["glans(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans:Sca:0"]'
+   pose.bones["glans(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans:Sca:1"]'
+   pose.bones["glans(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans:Sca:2"]'
+   pose.bones["glans_tip(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans_tip:Sca:0"]'
+   pose.bones["glans_tip(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans_tip:Sca:1"]'
+   pose.bones["glans_tip(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["glans_tip:Sca:2"]'
+   pose.bones["urethra(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["urethra:Sca:0"]'
+   pose.bones["urethra(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["urethra:Sca:1"]'
+   pose.bones["urethra(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["urethra:Sca:2"]'
+   pose.bones["shaft_01(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_01:Sca:0"]'
+   pose.bones["shaft_01(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_01:Sca:2"]'
+   pose.bones["shaft_01(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_01:Sca:1"]'
+   pose.bones["shaft_02(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_02:Sca:0"]'
+   pose.bones["shaft_02(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_02:Sca:2"]'
+   pose.bones["shaft_02(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_02:Sca:1"]'
+   pose.bones["shaft_03(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_03:Sca:0"]'
+   pose.bones["shaft_03(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_03:Sca:2"]'
+   pose.bones["shaft_03(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_03:Sca:1"]'
+   pose.bones["shaft_04(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_04:Sca:0"]'
+   pose.bones["shaft_04(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_04:Sca:2"]'
+   pose.bones["shaft_04(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_04:Sca:1"]'
+   pose.bones["shaft_05(drv)"].scale [ 0 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_05:Sca:0"]'
+   pose.bones["shaft_05(drv)"].scale [ 2 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_05:Sca:2"]'
+   pose.bones["shaft_05(drv)"].scale [ 1 ]
+     expression: '1+a'
+     variable: a | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_05:Sca:1"]'
+   pose.bones["shaft_01(drv)"].location [ 2 ]
+     expression: '0.0'
+     variable: t00 | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["shaft_01:Loc:2:01"]'
+   pose.bones["spine"].constraints["Copy Rotation back"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaSpineControl"]'
+   pose.bones["spine-1"].constraints["Copy Rotation back"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaSpineControl"]'
+   pose.bones["chest"].constraints["Copy Rotation back"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaSpineControl"]'
+   pose.bones["chest-1"].constraints["Copy Rotation back"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaSpineControl"]'
+   pose.bones["neck"].constraints["Copy Rotation neckhead"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaNeckControl"]'
+   pose.bones["neck-1"].constraints["Copy Rotation neckhead"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaNeckControl"]'
+   pose.bones["head"].constraints["Copy Rotation neckhead"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaNeckControl"]'
+   pose.bones["arm_parent.L"].constraints["Copy Transform armSocket.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmHinge_L"]'
+   pose.bones["upper_arm.L"].constraints["Copy Transform upper_arm.ik.twist.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_L"]'
+   pose.bones["forearm.L"].constraints["Copy Transform forearm.ik.twist.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_L"]'
+   pose.bones["hand.L"].constraints["Copy Transform hand.ik.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_L"]'
+   pose.bones["forearm.L"].constraints["Copy Rotation hand0.ik.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_L"]'
+   pose.bones["forearm.L"].constraints["Copy Rotation hand.fk.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_L"]'
+   pose.bones["forearm.L"].constraints["Copy Rotation hand0.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_L"]'
+   pose.bones["forearm.fk.L"].lock_rotation [ 1 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_L"]'
+   pose.bones["leg_parent.L"].constraints["Copy Transform legSocket.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegHinge_L"]'
+   pose.bones["thigh.L"].constraints["Copy Transform thigh.ik.twist.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_L"]'
+   pose.bones["shin.L"].constraints["Copy Transform shin.ik.twist.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_L"]'
+   pose.bones["foot.L"].constraints["Copy Transform foot.inv.ik.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_L"]'
+   pose.bones["toe.L"].constraints["Copy Transform toe.inv.ik.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_L"]'
+   pose.bones["eye.L(drv)"].constraints["Damped Track gaze.L"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGaze_L"]'
+   pose.bones["arm_parent.R"].constraints["Copy Transform armSocket.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmHinge_R"]'
+   pose.bones["upper_arm.R"].constraints["Copy Transform upper_arm.ik.twist.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_R"]'
+   pose.bones["forearm.R"].constraints["Copy Transform forearm.ik.twist.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_R"]'
+   pose.bones["hand.R"].constraints["Copy Transform hand.ik.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_R"]'
+   pose.bones["forearm.R"].constraints["Copy Rotation hand0.ik.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmIk_R"]'
+   pose.bones["forearm.R"].constraints["Copy Rotation hand.fk.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_R"]'
+   pose.bones["forearm.R"].constraints["Copy Rotation hand0.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_R"]'
+   pose.bones["forearm.fk.R"].lock_rotation [ 1 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_R"]'
+   pose.bones["leg_parent.R"].constraints["Copy Transform legSocket.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegHinge_R"]'
+   pose.bones["thigh.R"].constraints["Copy Transform thigh.ik.twist.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_R"]'
+   pose.bones["shin.R"].constraints["Copy Transform shin.ik.twist.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_R"]'
+   pose.bones["foot.R"].constraints["Copy Transform foot.inv.ik.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_R"]'
+   pose.bones["toe.R"].constraints["Copy Transform toe.inv.ik.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegIk_R"]'
+   pose.bones["eye.R(drv)"].constraints["Damped Track gaze.R"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGaze_R"]'
+   pose.bones["gaze1"].constraints["Copy Transform gaze0"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGazeFollowsHead"]'
+   pose.bones["gaze"].constraints["Limit Location"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGazeFollowsHead"]'
+   pose.bones["gaze"].constraints["Limit Rotation"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGazeFollowsHead"]'
+   pose.bones["gaze"].constraints["Damped Track gaze0"].influence [ 0 ]
+     expression: 'x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaGazeFollowsHead"]'
+   pose.bones["thumb.01.L"].constraints["Copy Rotation thumb.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.02.L"].constraints["Copy Rotation thumb.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.03.L"].constraints["Copy Rotation thumb.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.L"].constraints["Copy Rotation fingers.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.01.L"].constraints["Damped Track thumb.ik.L"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["thumb.01.L"].constraints["Damped Track thumb.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.02.L"].constraints["Locked Track thumb.ik.L"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["thumb.02.L"].constraints["Locked Track thumb.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.03.L"].constraints["Locked Track thumb.ik.L"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["thumb.03.L"].constraints["Locked Track thumb.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.01.L"].constraints["Copy Rotation index.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.02.L"].constraints["Copy Rotation index.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.03.L"].constraints["Copy Rotation index.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["index.L"].constraints["Copy Rotation fingers.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.01.L"].constraints["Damped Track index.ik.L"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_index.01.L"].constraints["Damped Track index.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.02.L"].constraints["Locked Track index.ik.L"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_index.02.L"].constraints["Locked Track index.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_index.03.L"].constraints["Locked Track index.ik.L"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_index.03.L"].constraints["Locked Track index.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.01.L"].constraints["Copy Rotation middle.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.02.L"].constraints["Copy Rotation middle.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.03.L"].constraints["Copy Rotation middle.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["middle.L"].constraints["Copy Rotation fingers.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.01.L"].constraints["Damped Track middle.ik.L"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_middle.01.L"].constraints["Damped Track middle.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.02.L"].constraints["Locked Track middle.ik.L"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_middle.02.L"].constraints["Locked Track middle.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_middle.03.L"].constraints["Locked Track middle.ik.L"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_middle.03.L"].constraints["Locked Track middle.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.01.L"].constraints["Copy Rotation ring.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.02.L"].constraints["Copy Rotation ring.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.03.L"].constraints["Copy Rotation ring.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["ring.L"].constraints["Copy Rotation fingers.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.01.L"].constraints["Damped Track ring.ik.L"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_ring.01.L"].constraints["Damped Track ring.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.02.L"].constraints["Locked Track ring.ik.L"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_ring.02.L"].constraints["Locked Track ring.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_ring.03.L"].constraints["Locked Track ring.ik.L"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_ring.03.L"].constraints["Locked Track ring.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.01.L"].constraints["Copy Rotation pinky.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.02.L"].constraints["Copy Rotation pinky.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.03.L"].constraints["Copy Rotation pinky.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["pinky.L"].constraints["Copy Rotation fingers.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.01.L"].constraints["Damped Track pinky.ik.L"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_pinky.01.L"].constraints["Damped Track pinky.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.02.L"].constraints["Locked Track pinky.ik.L"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_pinky.02.L"].constraints["Locked Track pinky.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["f_pinky.03.L"].constraints["Locked Track pinky.ik.L"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_L"]'
+   pose.bones["f_pinky.03.L"].constraints["Locked Track pinky.ik.L"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_L"]'
+   pose.bones["thumb.01.R"].constraints["Copy Rotation thumb.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.02.R"].constraints["Copy Rotation thumb.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.03.R"].constraints["Copy Rotation thumb.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.R"].constraints["Copy Rotation fingers.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.01.R"].constraints["Damped Track thumb.ik.R"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["thumb.01.R"].constraints["Damped Track thumb.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.02.R"].constraints["Locked Track thumb.ik.R"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["thumb.02.R"].constraints["Locked Track thumb.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["thumb.03.R"].constraints["Locked Track thumb.ik.R"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["thumb.03.R"].constraints["Locked Track thumb.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.01.R"].constraints["Copy Rotation index.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.02.R"].constraints["Copy Rotation index.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.03.R"].constraints["Copy Rotation index.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["index.R"].constraints["Copy Rotation fingers.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.01.R"].constraints["Damped Track index.ik.R"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_index.01.R"].constraints["Damped Track index.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.02.R"].constraints["Locked Track index.ik.R"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_index.02.R"].constraints["Locked Track index.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_index.03.R"].constraints["Locked Track index.ik.R"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_index.03.R"].constraints["Locked Track index.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.01.R"].constraints["Copy Rotation middle.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.02.R"].constraints["Copy Rotation middle.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.03.R"].constraints["Copy Rotation middle.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["middle.R"].constraints["Copy Rotation fingers.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.01.R"].constraints["Damped Track middle.ik.R"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_middle.01.R"].constraints["Damped Track middle.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.02.R"].constraints["Locked Track middle.ik.R"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_middle.02.R"].constraints["Locked Track middle.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_middle.03.R"].constraints["Locked Track middle.ik.R"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_middle.03.R"].constraints["Locked Track middle.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.01.R"].constraints["Copy Rotation ring.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.02.R"].constraints["Copy Rotation ring.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.03.R"].constraints["Copy Rotation ring.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["ring.R"].constraints["Copy Rotation fingers.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.01.R"].constraints["Damped Track ring.ik.R"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_ring.01.R"].constraints["Damped Track ring.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.02.R"].constraints["Locked Track ring.ik.R"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_ring.02.R"].constraints["Locked Track ring.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_ring.03.R"].constraints["Locked Track ring.ik.R"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_ring.03.R"].constraints["Locked Track ring.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.01.R"].constraints["Copy Rotation pinky.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.02.R"].constraints["Copy Rotation pinky.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.03.R"].constraints["Copy Rotation pinky.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["pinky.R"].constraints["Copy Rotation fingers.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.01.R"].constraints["Damped Track pinky.ik.R"].influence [ 0 ]
+     expression: '0.250*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_pinky.01.R"].constraints["Damped Track pinky.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.02.R"].constraints["Locked Track pinky.ik.R"].influence [ 0 ]
+     expression: '0.400*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_pinky.02.R"].constraints["Locked Track pinky.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["f_pinky.03.R"].constraints["Locked Track pinky.ik.R"].influence [ 0 ]
+     expression: '0.800*x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerIk_R"]'
+   pose.bones["f_pinky.03.R"].constraints["Locked Track pinky.ik.R"].mute [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaFingerControl_R"]'
+   pose.bones["neckParent"].constraints["Copy Rotation hip"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaNeckFollowsSpine"]'
+   pose.bones["hand.L"].constraints["Copy Location forearm.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmStretch_L"]'
+   pose.bones["hand.fk.L"].constraints["Copy Location forearm.fk.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmStretch_L"]'
+   pose.bones["foot.L"].constraints["Copy Location shin.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegStretch_L"]'
+   pose.bones["foot.fk.L"].constraints["Copy Location shin.fk.L"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegStretch_L"]'
+   pose.bones["hand.R"].constraints["Copy Location forearm.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmStretch_R"]'
+   pose.bones["hand.fk.R"].constraints["Copy Location forearm.fk.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaArmStretch_R"]'
+   pose.bones["foot.R"].constraints["Copy Location shin.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegStretch_R"]'
+   pose.bones["foot.fk.R"].constraints["Copy Location shin.fk.R"].influence [ 0 ]
+     expression: '1-x'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaLegStretch_R"]'
+   pose.bones["hand.fk.L"].constraints["Limit Rotation"].use_limit_y [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_L"]'
+   pose.bones["hand.fk.R"].constraints["Limit Rotation"].use_limit_y [ 0 ]
+     expression: 'not(x)'
+     variable: x | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: '["MhaForearmFollow_R"]'
+   pose.bones["penis_aim"].constraints["Damped Track"].head_tail [ 0 ]
+     expression: '((0.018126 * scalefix) - RootDistance)/(0.018126 * scalefix)'
+     variable: RootDistance | type: LOC_DIFF
+       target_id: Charlie 9_MHX
+       bone: 'penis_aim_drvfix'
+       data_path: ''
+       target_id: Charlie 9_MHX
+       bone: 'penis_target'
+       data_path: ''
+     variable: scalefix | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'penis_aim_drvfix'
+       data_path: ''
+   pose.bones["penis_stretch_measure"].constraints["Stretch To"].head_tail [ 0 ]
+     expression: '((0.018126 * scalefix) - RootDistance)/(0.018126 * scalefix)'
+     variable: RootDistance | type: LOC_DIFF
+       target_id: Charlie 9_MHX
+       bone: 'penis_aim_drvfix'
+       data_path: ''
+       target_id: Charlie 9_MHX
+       bone: 'penis_target'
+       data_path: ''
+     variable: scalefix | type: TRANSFORMS
+       target_id: Charlie 9_MHX
+       bone: 'penis_aim_drvfix'
+       data_path: ''
+   pose.bones["penis_aim_offset"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1-var'
+     variable: var | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["penis_trg_ctrl"]["FollowCapsule"]'
+   pose.bones["penis_segrot_ctrl"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: 'var * (1 - GE)'
+     variable: var | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["penis_trg_ctrl"]["CounterRotate"]'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_segrot_ctrl"].constraints["Copy Rotation.001"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_1"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_01"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_01"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_01"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_2"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_02"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_02"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_02"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_3"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_03"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_03"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_03"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_4"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_04"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_04"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_04"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_5"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_05"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_05"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_05"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_6"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_06"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_06"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_06"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_7"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_07"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_07"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_07"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_8"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_08"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_08"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_08"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_9"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_09"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_09"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_09"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_10"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_10"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_10"].constraints["Copy Location"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["shaft_10"].constraints["Copy Scale"].influence [ 0 ]
+     expression: '1.0 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+   pose.bones["penis_ctrlNHI_11"].constraints["Copy Rotation"].influence [ 0 ]
+     expression: '0.2 * (1 - GE)'
+     variable: GE | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["root.1"]["GAME_EXPORT_PENIS"]'
+
+OBJECT: PenisPhysics | type: MESH | drivers: 1
+   modifiers["PIN_tip"].mask_constant [ 0 ]
+     expression: 'var'
+     variable: var | type: SINGLE_PROP
+       target_id: Charlie 9_MHX
+       bone: ''
+       data_path: 'pose.bones["penis_trg_ctrl"]["PinTip"]'
+
+----------------------------------------------------------------------------------------------------
+[ARMATURE RELATIONSHIPS]
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+[ARMATURE MODIFIERS]
+----------------------------------------------------------------------------------------------------
+   3DL_LOS_Ankle_Socks_G9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Andrew 9 Eyebrows Mesh → Charlie 9 | modifier: Armature SkinBinding
+   BW LEO Pant Mesh → Charlie 9 | modifier: Armature SkinBinding
+   BW LEO Shoes Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Charlie 9 Mesh → Charlie 9 | modifier: Facial Rig
+   Core Zone Hoodie Add On Mesh → Core Zone Hoodie Add On | modifier: Armature SkinBinding
+   Core Zone Hoodie Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Core Zone Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Core Zone Sneakers Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Corezone Pants Add On Mesh → Corezone Pants Add On | modifier: Armature SkinBinding
+   Doc Martens G9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Dylan 9 Eyebrows Mesh → Charlie 9 | modifier: Armature SkinBinding
+   FV Chaotic Fringe Hair Base Genesis 9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   FV Chaotic Fringe Hair Hair Genesis 9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   G9 Intimates Boxershorts Genesis 9 (2) Mesh → Charlie 9 | modifier: Armature SkinBinding
+   G9 Intimates Boxershorts Genesis 9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   G9 Intimates Shorts Masculine Genesis 9 (2) Mesh → Charlie 9 | modifier: Armature SkinBinding
+   G9 Intimates Shorts Masculine Genesis 9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Genesis 9 Eyelashes Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Genesis 9 Eyes Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Genesis 9 Mouth Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Genesis 9 Tear Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HBJO Jacket A Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HBJO Jacket B Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HBJO Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HBJO Sneakers Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HBJO T-Shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HCSO Check shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HCSO Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Head Cage → Charlie 9 | modifier: Character Body Preview
+   Heart Pop Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Heart Pop SneakerL Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Heart Pop SneakerR Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Heart Pop Sweater Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HHSO Hoodie A Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HHSO Sneakers Mesh → Charlie 9 | modifier: Armature SkinBinding
+   High Ankle Sneakers G8M Mesh → Charlie 9 | modifier: Armature SkinBinding
+   High Ankle Sneakers G9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HMOO Boots Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HMOO Jacket Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HMSO Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HMSO Sandals Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HMSO Shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSJO Jacket (2) Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSJO Jacket Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSJO Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSJO Sneakers Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSO Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSO Sneaker Mesh → Charlie 9 | modifier: Armature SkinBinding
+   HTSO Sweater Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Gym Wardrobe Hoodie Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Gym Wardrobe Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Gym Wardrobe Shorts Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Gym Wardrobe Tanktop Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Wardrobe Raglan Sweater Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Wardrobe Slim Pants Button Mesh → Masculine Wardrobe Slim Pants Button | modifier: Armature SkinBinding
+   Masculine Wardrobe Slim Pants Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Masculine Wardrobe Sweater Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Hoodie Close Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Hoodie Open Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Pant Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Shirt Long Sleeve Close Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Shirt Long Sleeve Open Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS Shoes Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS T-Shirt (2) Mesh → Charlie 9 | modifier: Armature SkinBinding
+   MMCS T-Shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Modern Shirt Collection Oversize T-Shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Modern Shirt Collection Polo T-Shirt Genesis 9 (2) Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Modern Shirt Collection Polo T-Shirt Genesis 9 Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Pajama Pants G8M Mesh → Charlie 9 | modifier: Armature SkinBinding
+   PenisPhysics → Charlie 9_MHX | modifier: Armature
+   SJO Jacket Mesh → Charlie 9 | modifier: Armature SkinBinding
+   SJO T-Shirt Mesh → Charlie 9 | modifier: Armature SkinBinding
+   SU Shower Towel Mesh → Charlie 9 | modifier: Armature SkinBinding
+   SU Shower Towel Top Mesh → Charlie 9 | modifier: Armature SkinBinding
+   Zipper (2) Mesh → Zipper (2) | modifier: Armature SkinBinding
+   Zipper (3) Mesh → Zipper (3) | modifier: Armature SkinBinding
+   Zipper (4) Mesh → Zipper (4) | modifier: Armature SkinBinding
+   Zipper (5) Mesh → Zipper (5) | modifier: Armature SkinBinding
+   Zipper etc (2) Mesh → Zipper etc (2) | modifier: Armature SkinBinding
+   Zipper etc (3) Mesh → Zipper etc (3) | modifier: Armature SkinBinding
+   Zipper etc Mesh → Zipper etc | modifier: Armature SkinBinding
+   Zipper Mesh → Zipper | modifier: Armature SkinBinding
+
+====================================================================================================
+END — NOTHING MODIFIED
